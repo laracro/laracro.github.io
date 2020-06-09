@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>NSQ启动配置 - Laracro</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="image nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认4" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.71.1 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/nsq-config/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.78f8f17bab244b9ee62ad16480c9584d5fc2db06ae20681d1ca225cefd80767c.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="NSQ启动配置" />
+<meta property="og:description" content="image nsqlookupd 启动 nsqlookupd -bradcast-address=&quot;广播地址&quot; -tcp-address=&quot;:4160&quot; #启动tcp端口【默认4160】 -http-address=&quot;:4161&quot; #启动http端口【默认4" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/nsq-config/" />
+<meta property="article:published_time" content="2019-04-19T14:52:29+00:00" />
+<meta property="article:modified_time" content="2019-04-19T14:52:29+00:00" />
+<meta itemprop="name" content="NSQ启动配置">
+<meta itemprop="description" content="image nsqlookupd 启动 nsqlookupd -bradcast-address=&quot;广播地址&quot; -tcp-address=&quot;:4160&quot; #启动tcp端口【默认4160】 -http-address=&quot;:4161&quot; #启动http端口【默认4">
+<meta itemprop="datePublished" content="2019-04-19T14:52:29&#43;00:00" />
+<meta itemprop="dateModified" content="2019-04-19T14:52:29&#43;00:00" />
+<meta itemprop="wordCount" content="372">
+
+
+
+<meta itemprop="keywords" content="nsq," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NSQ启动配置"/>
+<meta name="twitter:description" content="image nsqlookupd 启动 nsqlookupd -bradcast-address=&quot;广播地址&quot; -tcp-address=&quot;:4160&quot; #启动tcp端口【默认4160】 -http-address=&quot;:4161&quot; #启动http端口【默认4"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Laracro</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">文章</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Laracro</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">文章</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">NSQ启动配置</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-04-19 </span>
+        
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>image
+<img src="http://127.0.0.1:1313/img/1586760843851.png" alt=""></p>
+<p>nsqlookupd</p>
+<pre><code>启动 
+nsqlookupd
+    -bradcast-address=&quot;广播地址&quot;
+    -tcp-address=&quot;:4160&quot; #启动tcp端口【默认4160】
+    -http-address=&quot;:4161&quot; #启动http端口【默认4161】
+    -log-level=debug #日志级别【debug, info, warn, error, or fatal】
+    -log-prefix=&quot;nsquplookd-web1&quot; #日志前缀【默认hostname】
+
+
+介绍: 启动之后分别可以看到两个端口【4160，4161】
+    4160 -&gt; 提供给nsqd绑定使用
+    4161 -&gt; 提供nsqadmin绑定使用的http端口
+</code></pre>
+<p>nsqd</p>
+<pre><code>启动
+nsqd
+    -lookupd-tcp-address=127.0.0.1:4160 #绑定nsqlookupd的tcp端口
+    -broadcast-address=&quot;api-service&quot; #广播地址
+    -tcp-address=&quot;:7810&quot; #启动tcp端口 【默认4150】
+    -http-address=&quot;7811&quot; #启动http端口 【默认4151】
+    -log-level=&quot;debug&quot; #日志级别 【debug, info, warn, error, or fatal】
+    -log-prefix=&quot;web1-nsq-api-service&quot; 日志前缀
+    
+介绍: 启动之后分别可以看到两个端口【7810，7811】
+    7810 -&gt; #提供生产者使用
+    7811 -&gt; #提供生产者使用    
+</code></pre>
+<p>nsqadmin</p>
+<pre><code>nohup nsqadmin -lookupd-http-address=127.0.0.1:4151 &gt;&gt; ./nsqadmin-web2.log 2&gt;&amp;1 &amp;
+
+启动: 
+nsqadmin -lookupd-http-address=127.0.0.1:4161 【nsqlookupd启动的4161端口】
+         -http-address=192.168.33.122:4171 【提供访问监控面板的http端口】
+</code></pre>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/nsq/">nsq</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/docker-ji-chu-shi-yong/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">docker 基础使用</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/install-nsq/">
+            <span class="next-text nav-default">NSQ安装</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author"></span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

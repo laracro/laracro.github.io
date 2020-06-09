@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on Laracro</title>
+    <link>http://localhost:1313/tags/ssh/</link>
+    <description>Recent content in ssh on Laracro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Mar 2017 16:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssh 快捷登陆</title>
+      <link>http://localhost:1313/post/ssh-kuai-jie-deng-lu/</link>
+      <pubDate>Sun, 19 Mar 2017 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ssh-kuai-jie-deng-lu/</guid>
+      <description>编辑ssh config vim ~/.ssh/config 内容： HOST t1 User root Port 22 HostName xxx.xxx.xxx.xx HOST t2 User root Port 22 HostName xxx.xxx.xxx.xx HOST t3 User root Port 22262 HostName xxx.xxx.xxx.xx</description>
+    </item>
+    
+  </channel>
+</rss>

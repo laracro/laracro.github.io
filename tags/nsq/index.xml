@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nsq on Laracro</title>
+    <link>http://localhost:1313/tags/nsq/</link>
+    <description>Recent content in nsq on Laracro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Apr 2019 14:52:29 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/nsq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NSQ启动配置</title>
+      <link>http://localhost:1313/post/nsq-config/</link>
+      <pubDate>Fri, 19 Apr 2019 14:52:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/nsq-config/</guid>
+      <description>image nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认4</description>
+    </item>
+    
+    <item>
+      <title>NSQ安装</title>
+      <link>http://localhost:1313/post/install-nsq/</link>
+      <pubDate>Wed, 17 Apr 2019 11:50:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/install-nsq/</guid>
+      <description>nsq_install.sh #!/bin/bash src_path=&amp;quot;/root/software&amp;quot; LOGFILE=&amp;quot;/tmp/nsq-install-log&amp;quot; FILENAME=nsq-1.2.0.linux-amd64.go1.12.9.tar.gz FILEDIR=nsq-1.2.0.linux-amd64.go1.12.9 cd $src_path #wget package wget https://s3.amazonaws.com/bitly-downloads/nsq/$FILENAME tar -zxvf $FILENAME cd $src_path/$FILEDIR/bin cp $src_path/$FILEDIR/bin/* /usr/local/bin/ 保存并执行：sh ./nsq_install.sh ~ nsq -verison</description>
+    </item>
+    
+  </channel>
+</rss>

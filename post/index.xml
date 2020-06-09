@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Laracro</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Laracro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 20 Apr 2020 14:50:24 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker 基础使用</title>
+      <link>http://localhost:1313/post/docker-ji-chu-shi-yong/</link>
+      <pubDate>Mon, 20 Apr 2020 14:50:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/docker-ji-chu-shi-yong/</guid>
+      <description>获取本地镜像 docker images 拉取镜像 docker pull xxx 运行镜像 docker run -it xxx 查看运行的容器 docker container ls 进入容器 docker exec -t xxx 停止容器 docker container stop 093b 查看容器ip docker inspect centos:centos7</description>
+    </item>
+    
+    <item>
+      <title>NSQ启动配置</title>
+      <link>http://localhost:1313/post/nsq-config/</link>
+      <pubDate>Fri, 19 Apr 2019 14:52:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/nsq-config/</guid>
+      <description>image nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认4</description>
+    </item>
+    
+    <item>
+      <title>NSQ安装</title>
+      <link>http://localhost:1313/post/install-nsq/</link>
+      <pubDate>Wed, 17 Apr 2019 11:50:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/install-nsq/</guid>
+      <description>nsq_install.sh #!/bin/bash src_path=&amp;quot;/root/software&amp;quot; LOGFILE=&amp;quot;/tmp/nsq-install-log&amp;quot; FILENAME=nsq-1.2.0.linux-amd64.go1.12.9.tar.gz FILEDIR=nsq-1.2.0.linux-amd64.go1.12.9 cd $src_path #wget package wget https://s3.amazonaws.com/bitly-downloads/nsq/$FILENAME tar -zxvf $FILENAME cd $src_path/$FILEDIR/bin cp $src_path/$FILEDIR/bin/* /usr/local/bin/ 保存并执行：sh ./nsq_install.sh ~ nsq -verison</description>
+    </item>
+    
+    <item>
+      <title>macOS Read-only file system</title>
+      <link>http://localhost:1313/post/macos-read-only-file-system/</link>
+      <pubDate>Sun, 15 Apr 2018 09:02:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/macos-read-only-file-system/</guid>
+      <description>sudo mount -uw /  </description>
+    </item>
+    
+    <item>
+      <title>ssh 快捷登陆</title>
+      <link>http://localhost:1313/post/ssh-kuai-jie-deng-lu/</link>
+      <pubDate>Sun, 19 Mar 2017 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ssh-kuai-jie-deng-lu/</guid>
+      <description>编辑ssh config vim ~/.ssh/config 内容： HOST t1 User root Port 22 HostName xxx.xxx.xxx.xx HOST t2 User root Port 22 HostName xxx.xxx.xxx.xx HOST t3 User root Port 22262 HostName xxx.xxx.xxx.xx</description>
+    </item>
+    
+    <item>
+      <title>Windows 安装 airtest</title>
+      <link>http://localhost:1313/post/windows-install-airtest/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows-install-airtest/</guid>
+      <description>AirTest：跨平台的UI自动化测试编辑器，适用于游戏和App - 资料索引 + 官网网站 + 官网文档 环境要求 python3 python3.6.4 官网地址 #检查python环境 &amp;gt; python</description>
+    </item>
+    
+  </channel>
+</rss>
