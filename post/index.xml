@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Laracro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Apr 2020 14:50:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Apr 2019 14:52:29 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>docker 基础使用</title>
-      <link>http://localhost:1313/post/docker-ji-chu-shi-yong/</link>
-      <pubDate>Mon, 20 Apr 2020 14:50:24 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/docker-ji-chu-shi-yong/</guid>
-      <description>获取本地镜像 docker images 拉取镜像 docker pull xxx 运行镜像 docker run -it xxx 查看运行的容器 docker container ls 进入容器 docker exec -t xxx 停止容器 docker container stop 093b 查看容器ip docker inspect centos:centos7</description>
-    </item>
     
     <item>
       <title>NSQ启动配置</title>
