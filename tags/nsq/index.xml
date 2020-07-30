@@ -17,7 +17,7 @@
       <pubDate>Fri, 19 Apr 2019 14:52:29 +0000</pubDate>
       
       <guid>http://localhost:1313/post/nsq-config/</guid>
-      <description>image nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认4</description>
+      <description>nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认41</description>
     </item>
     
     <item>

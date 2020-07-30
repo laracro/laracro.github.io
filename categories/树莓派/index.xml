@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>树莓派 on Laracro</title>
+    <link>http://localhost:1313/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+    <description>Recent content in 树莓派 on Laracro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Apr 2019 11:50:33 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>树莓派4B安装ubuntu</title>
+      <link>http://localhost:1313/post/raspberry-install-ubuntu/</link>
+      <pubDate>Wed, 17 Apr 2019 11:50:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/raspberry-install-ubuntu/</guid>
+      <description>下载镜像 wget http://cdimage.ubuntu.com/releases/18.04/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz 使用Raspberry Pi Imager写入TF 1.插入sd卡启动树莓派 2.默认账号密码： ubuntu &amp;amp; ubuntu 3.墙纸修改密码 4.下载桌面环境 sudo apt-get</description>
+    </item>
+    
+  </channel>
+</rss>

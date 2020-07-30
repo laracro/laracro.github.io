@@ -17,7 +17,7 @@
       <pubDate>Fri, 19 Apr 2019 14:52:29 +0000</pubDate>
       
       <guid>http://localhost:1313/post/nsq-config/</guid>
-      <description>image nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认4</description>
+      <description>nsqlookupd 启动 nsqlookupd -bradcast-address=&amp;quot;广播地址&amp;quot; -tcp-address=&amp;quot;:4160&amp;quot; #启动tcp端口【默认4160】 -http-address=&amp;quot;:4161&amp;quot; #启动http端口【默认41</description>
     </item>
     
     <item>
@@ -27,6 +27,15 @@
       
       <guid>http://localhost:1313/post/install-nsq/</guid>
       <description>nsq_install.sh #!/bin/bash src_path=&amp;quot;/root/software&amp;quot; LOGFILE=&amp;quot;/tmp/nsq-install-log&amp;quot; FILENAME=nsq-1.2.0.linux-amd64.go1.12.9.tar.gz FILEDIR=nsq-1.2.0.linux-amd64.go1.12.9 cd $src_path #wget package wget https://s3.amazonaws.com/bitly-downloads/nsq/$FILENAME tar -zxvf $FILENAME cd $src_path/$FILEDIR/bin cp $src_path/$FILEDIR/bin/* /usr/local/bin/ 保存并执行：sh ./nsq_install.sh ~ nsq -verison</description>
+    </item>
+    
+    <item>
+      <title>树莓派4B安装ubuntu</title>
+      <link>http://localhost:1313/post/raspberry-install-ubuntu/</link>
+      <pubDate>Wed, 17 Apr 2019 11:50:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/raspberry-install-ubuntu/</guid>
+      <description>下载镜像 wget http://cdimage.ubuntu.com/releases/18.04/release/ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz 使用Raspberry Pi Imager写入TF 1.插入sd卡启动树莓派 2.默认账号密码： ubuntu &amp;amp; ubuntu 3.墙纸修改密码 4.下载桌面环境 sudo apt-get</description>
     </item>
     
     <item>
